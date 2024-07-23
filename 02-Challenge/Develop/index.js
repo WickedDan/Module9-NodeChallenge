@@ -52,6 +52,16 @@ const questions = [
         message:"Email?",
         name:"email",
     },
+    {
+        type:"input",
+        message:"Deployment Link?",
+        name:"link",
+    },
+    {
+        type:"input",
+        message:"screenshot?",
+        name:"screenshot",
+    },
 
 ];
 
@@ -59,9 +69,6 @@ const questions = [
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-
 
 
 // TODO: Create a function to initialize app
@@ -80,10 +87,15 @@ ${answers.info}
 ${answers.guide}
 ## Test Instructions
 ${answers.test}
-## License
-![license](https://img.shields.io/badge/${answers.license}-License-blue)
 ## Questions 
 If you have questions check out my github ${answers.github} or you can email me at ${answers.email};
+## Screenshots
+${answers.screenshot}
+## Deployment Link
+${answers.link}
+## License
+![license](https://img.shields.io/badge/${answers.license}-License-blue)
+
 
             `)
     })
