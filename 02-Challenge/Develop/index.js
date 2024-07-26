@@ -66,11 +66,6 @@ const questions = [
 ];
 
 
-
-
-// TODO: Create a function to write README file
-
-
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
@@ -95,14 +90,9 @@ ${answers.screenshot}
 ${answers.link}
 ## License
 ![license](https://img.shields.io/badge/${answers.license}-License-blue)
-
-
             `)
     })
 }
-
-
-
 
 // Function call to initialize app
 init();
